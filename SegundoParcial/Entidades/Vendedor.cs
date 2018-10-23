@@ -16,6 +16,7 @@ namespace SegundoParcial.Entidades
         public decimal Sueldo { get; set; }
         public string Nombre { get; set; }
         public DateTime FechaVendedor { get; set; }
+        public virtual List<VendedorDetalle> Metas { get; set; }
 
 
         public Vendedor()
@@ -26,6 +27,7 @@ namespace SegundoParcial.Entidades
             Total = 0;
             Nombre = string.Empty;
             FechaVendedor = DateTime.Now.Date;
+            Metas = new List<VendedorDetalle>();
         }
 
     }

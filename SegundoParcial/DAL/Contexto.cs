@@ -11,6 +11,7 @@ namespace SegundoParcial.DAL
     public class Contexto : DbContext
     {
         public DbSet<Vendedor> Vendedorp { get; set;}
+        public DbSet<Metas> Metas { get; set; }
 
         public Contexto() : base("ConStr")
         {
